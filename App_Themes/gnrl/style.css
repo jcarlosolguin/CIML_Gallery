@@ -1,0 +1,222 @@
+﻿body {
+}
+img{
+    padding-top:10px;
+}
+.navbar-nav > li > a {padding-top:5px ; padding-bottom:5px }
+.navbar {min-height:10px !important; margin-bottom:0px;}
+.navbar-brand
+    {
+        height:10px; vertical-align:top; padding-top:0px;
+       
+
+         max-height: 100px;
+        max-width: 50%; 
+    
+    padding-top:2%; 
+    }
+.navbar-toggle {
+       color:white;
+    }
+
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../../img/pre1.gif) center no-repeat #fff;
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+    vertical-align:top;
+}
+.col-centered {
+    display:inline-block;
+    float:left;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    vertical-align:top;
+}
+/*/*photoswipe*/
+.my-gallery {
+  width: 100%;
+  float: left;
+}
+.my-gallery img {
+  width: 100%;
+  height: auto;
+}
+.my-gallery figure {
+  display: block;
+  margin: 0 5px 5px 0;
+
+}
+.my-gallery figcaption {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+    .navbar-header {
+        float: none;
+        height:100px;
+    }
+    .navbar-toggle {
+        display: block;
+        height:70px;
+        width:100px;
+        
+    }
+    .icon-bar
+    {
+        display: block;
+        width:100px;
+        height:10px;
+        border-radius: 1px;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        font-size:24pt;
+        
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+    .navbar-brand
+    {
+        padding-top:25px;
+        max-height: 100px;
+        max-width: 60%; 
+        
+    }
+    
+   
+}
+@media (max-width: 765px) 
+{
+    .col-centered {float:none;}
+}
+
+.button {
+  width: 200px;
+  /*margin: 150px auto;*/
+}
+
+.button a {
+  display: block;
+  height: 50px;
+  width: 200px;
+  
+  /*TYPE*/
+  color: white;
+  font: 17px/50px Helvetica, Verdana, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  
+  /*GRADIENT*/  
+  background: #00b7ea; /* Old browsers */
+  background: -moz-linear-gradient(top, #00b7ea 0%, #009ec3 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b7ea), color-stop(100%,#009ec3)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #00b7ea 0%,#009ec3 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #00b7ea 0%,#009ec3 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #00b7ea 0%,#009ec3 100%); /* IE10+ */
+  background: linear-gradient(top, #00b7ea 0%,#009ec3 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-9 */
+}
+
+.button a, p {
+    -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  
+  -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+     -moz-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+          box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.button p {
+  background: #222;
+  display: block;
+  height: 40px;
+  width: 180px; 
+  margin: -50px 0 0 10px;
+  
+  /*TYPE*/
+  text-align: center;
+  font: 12px/45px Helvetica, Verdana, sans-serif;
+  color: #fff;
+  
+  /*POSITION*/
+  position: absolute;
+  z-index: -1;
+  
+  /*TRANSITION*/  
+  -webkit-transition: margin 0.5s ease;
+     -moz-transition: margin 0.5s ease;
+       -o-transition: margin 0.5s ease;
+      -ms-transition: margin 0.5s ease;
+          transition: margin 0.5s ease;
+}
+
+/*HOVER*/
+.button:hover .bottom {
+  margin: -10px 0 0 10px;
+}
+
+.button:hover .top {
+  margin: -80px 0 0 10px;
+  line-height: 35px;
+}
+
+/*ACTIVE*/
+.button a:active {
+background: #00b7ea; /* Old browsers */
+background: -moz-linear-gradient(top,  #00b7ea 36%, #009ec3 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(36%,#00b7ea), color-stop(100%,#009ec3)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #00b7ea 36%,#009ec3 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #00b7ea 36%,#009ec3 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #00b7ea 36%,#009ec3 100%); /* IE10+ */
+background: linear-gradient(top,  #00b7ea 36%,#009ec3 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-9 */
+
+}
+
+.button:active .bottom {
+  margin: -20px 0 0 10px;
+}
+
+.button:active .top {
+  margin: -70px 0 0 10px;
+}
